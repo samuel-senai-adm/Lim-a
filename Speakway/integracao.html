@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeakWay - Escola de Idiomas</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: white;
+            box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Menu */
+        nav {
+            background: #ff6600;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffe600;
+        }
+
+        /* Botão hamburguer */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle div {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+
+        /* Conteúdo principal */
+        main {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        main h1 {
+            font-size: 36px;
+            color: #003399;
+            margin-bottom: 20px;
+        }
+
+        main p {
+            font-size: 18px;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        main img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        /* Botão destaque */
+        .botao {
+            display: inline-block;
+            background: #ff6600;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #e05500;
+        }
+
+        /* Rodapé */
+        footer {
+            background: #003399;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav ul {
+                position: absolute;
+                top: 70px;
+                right: 0;
+                background: #ff6600;
+                flex-direction: column;
+                width: 200px;
+                display: none;
+                text-align: center;
+                padding: 15px 0;
+            }
+
+            nav ul li {
+                margin: 15px 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            nav.active ul {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="menu-toggle" id="menu-toggle"></div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Imagem abaixo do menu -->
+        <img src="img/Domine o inglês escola de idiomas escola de língua aulas de inglês aulas mensalidade instagram post.png" alt="Banner SpeakWay">
+
+        <h1>Bem-vindo à SpeakWay!</h1>
+        <p>A melhor escola de idiomas para você dominar novas línguas com praticidade, qualidade e preços acessíveis.</p>
+        <a href="formulario.html" class="botao">Inscreva-se Agora</a>
+    </main>
+
+    <footer>
+        <p>📍 Rua Alegre, 123 - Cidade Brasileira, Estado, País</p>
+        <p>📞 (12) 3456-7890</p>
+        <p>© 2025 SpeakWay - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
