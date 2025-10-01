@@ -86,3 +86,70 @@ h2 {
 .alinhar-baseline {
     align-items: baseline;
 }
+/* 5.1 Alinhamento de linhas (align-content) */
+.alinhar-conteudo {
+    align-content: space-evenly;
+    height: 600px; /*definir altura para demontrar align-content */
+}
+.alinhar-conteudo .caixa {
+    flex: 0 0 30%; /*para aumentar e fazer com que surga a quebra de linha */
+}
+.caixa {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/*6. Ordenação dos Itens FLex (order) */
+.ordem1 {
+    order: 1;
+}
+.ordem2 {
+    order: 2;
+}
+.ordem3 {
+    order: 3;
+}
+/* 7. Flex Grow */
+.exemplo-grow .item-flex {
+    flex-basis: 100px;
+}
+.crescer1 {
+    flex-grow: 1;
+}
+.crescer2 {
+    flex-grow: 2;
+}
+
+/* 8. Align Self */
+.alinhar-items-individuais .container-flex {
+    height: 300px;
+}
+.self-inicio {
+    align-self: start;
+}
+.self-centro {
+    align-self: center;
+}
+.self-fim {
+    align-self: end;
+}
+/* 9. Menu Nav */
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+a {
+    padding: 20px 20px 20px 20px;
+    margin: 0px;
+    color: white;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    font-weight: bold;
+    
+}
+a:hover {
+    background-color: white;
+    color: rgb(0, 0, 0)
+}
